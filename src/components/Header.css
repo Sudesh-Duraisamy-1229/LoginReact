@@ -1,0 +1,19 @@
+.head{
+    display : flex ;
+    flex-direction : row ;
+    position: absolute;
+    right: 0%;
+    margin-top: 12px;
+    
+}
+
+.option{
+    display : flex ;
+    flex-direction : row ;
+    padding-top : 15px;
+    cursor: pointer;
+}
+
+.option :hover{
+    background-color: aqua;
+}
