@@ -1,11 +1,22 @@
 import React from 'react'
 import './Footer.css'
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 const Footer = () => {
   return (
     <div className='footer'>
         <div className='footer-header'>
             <h3>Cholan Technology LLP </h3>
+            <div className='footer-icon'>
+                <WhatsAppIcon style={{color: "lightgreen" , paddingRight:"10px"}}/>
+                <InstagramIcon style={{color: "#fd5949" , paddingRight:"10px"}}/>
+                <FacebookIcon style={{color: "#4267B2" , paddingRight:"10px"}}/> 
+                <TwitterIcon style={{color: "#1DA1F2" , paddingRight:"10px"}}/>
+                
+            </div>
         </div>
         <div className='footer-container'>
                 <div className='sub-container'>

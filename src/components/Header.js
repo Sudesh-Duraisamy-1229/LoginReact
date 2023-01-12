@@ -4,7 +4,6 @@ import HomeIcon from '@mui/icons-material/Home';
 import GroupsIcon from '@mui/icons-material/Groups';
 import CallIcon from '@mui/icons-material/Call';
 import './Header.css'
-import PetsIcon from '@mui/icons-material/Pets';
 
 
 const HeaderStyle = styled.div`
@@ -16,6 +15,7 @@ height : 80px;
 const Option = styled.div`
 padding : 5px 20px 5px 5px;
 transform : scale(0.9);
+cursor : pointer;
 `
 
 const OptionText = styled.span`
@@ -33,18 +33,20 @@ const Header = () => {
 
   return (  
     <HeaderStyle>
-        <div className='head'>
-            <PetsIcon style={{position : "absolute" , left : "-230%" , transform : "scale(1.5)" , padding : "15px"}}/>
-            <Option className='option'> 
-                <OptionText><HomeIcon/>  &nbsp; Home </OptionText> 
-            </Option>
-            <Option className='option'>  
-                <OptionText> <CallIcon/>  &nbsp; Contact </OptionText>
-            </Option>
-            <Option className='option'> 
-                <OptionText><GroupsIcon/>  &nbsp;About Us  </OptionText>
-            </Option>
+         <div className='header_image'>
+            <img  src='./discord-logo.png' alt='logo'/>
         </div>
+            <div className='head'>
+                <Option className='option'> 
+                    <OptionText><HomeIcon/>  &nbsp; Home </OptionText> 
+                </Option>
+                <Option className='option'>  
+                    <OptionText> <CallIcon/>  &nbsp; Contact </OptionText>
+                </Option>
+                <Option className='option'> 
+                    <OptionText><GroupsIcon/>  &nbsp;About Us  </OptionText>
+                </Option>
+            </div>
     </HeaderStyle>
   )
 }

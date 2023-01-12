@@ -1,14 +1,20 @@
+
+import { MemoryRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
 import './App.css';
-import Footer from './components/Footer';
-import Header from './components/Header';
+import Dashboard from './components/Dashboard';
+
 import Login from './components/Login';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Login/>
-      <Footer/>
+      
+      <BrowserRouter>
+          <Routes>
+            <Route exact path='/' element = {<Login/>}></Route>
+            <Route exact path='dashboard' element = {<Dashboard/>}></Route>
+          </Routes>
+      </BrowserRouter>
     </div>
   );
 }
